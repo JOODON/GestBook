@@ -15,7 +15,7 @@ import javax.sql.DataSource;
 public class DBConfig implements TransactionManagementConfigurer {
     private String driverClass="com.mysql.cj.jdbc.Driver";
 
-    private String url="jdbc:mysql://localhost:3307/role";
+    private String url="jdbc:mysql://localhost:3307/guestbook";
 
     private String username="root";
 
