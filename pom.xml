@@ -14,7 +14,7 @@
     <maven.compiler.target>17</maven.compiler.target>
     <spring.verson>4.3.5.RELEASE</spring.verson>
     <!--Jackson-->
-    <jackson2.version>2.9.4</jackson2.version>
+    <jackson2.version>2.8.6</jackson2.version>
   </properties>
   <dependencies>
 
@@ -41,7 +41,8 @@
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
-      <version>4.0.1</version>
+      <version>3.1.0</version>
+    <!-- //이녀석 버전이 잘못 되었었음-->
       <scope>provided</scope>
     </dependency>
 
@@ -91,7 +92,7 @@
     <dependency>
       <groupId>com.fasterxml.jackson.datatype</groupId>
       <artifactId>jackson-datatype-jdk8</artifactId>
-      <version>2.9.4</version>
+      <version>${jackson2.version}</version>
     </dependency>
   </dependencies>
   <build>
