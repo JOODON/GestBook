@@ -1,16 +1,16 @@
 package dto;
 
 public class Log {
-    private int id;
+    private Long id;
     private String ip;
     private String method;
     private String regdate;
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
