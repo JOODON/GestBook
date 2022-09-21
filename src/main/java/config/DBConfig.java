@@ -12,7 +12,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableTransactionManagement
-public class DBConfig implements TransactionManagementConfigurer {
+public class DBConfig implements TransactionManagementConfigurer{
     private String driverClass="com.mysql.cj.jdbc.Driver";
 
     private String url="jdbc:mysql://localhost:3307/guestbook";
@@ -36,8 +36,9 @@ public class DBConfig implements TransactionManagementConfigurer {
     }
     @Override
     public PlatformTransactionManager annotationDrivenTransactionManager() {
-        return  transactionManger();
+        return transactionManger();
     }
+
     @Bean
     public PlatformTransactionManager transactionManger() {
         return new DataSourceTransactionManager(dataSource());
