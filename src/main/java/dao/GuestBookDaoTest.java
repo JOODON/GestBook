@@ -10,7 +10,7 @@ import java.util.Date;
 public class GuestBookDaoTest {
     public static void main(String[] args) {
         ApplicationContext ac=new AnnotationConfigApplicationContext(ApplicationConfig.class);
-        GuestBookDao guestBookDao=ac.getBean(GuestBookDao.class);
+        GuestbookDAO guestBookDao=ac.getBean(GuestbookDAO.class);
 
         Guestbook guestbook=new Guestbook();
         guestbook.setName("주동호");
